@@ -1,1 +1,64 @@
+:root{
+  --bg:#050608;
+  --card:#0e1b16;
+  --neon:#00ff95;
+  --text:#eafff6;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  height:100vh;
+  background:radial-gradient(circle at top,#0d151b,#050608 70%);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+  color:var(--text);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.title{
+  font-size:2.2rem;
+  margin-bottom:6px;
+  animation:float 4s ease-in-out infinite;
+}
+
+.subtitle{
+  opacity:.8;
+  margin-bottom:30px;
+}
+
+.menu{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+  width:90%;
+  max-width:500px;
+}
+
+.game-card{
+  background:var(--card);
+  border:2px solid var(--neon);
+  border-radius:18px;
+  padding:28px;
+  text-align:center;
+  font-size:1.4rem;
+  text-decoration:none;
+  color:var(--neon);
+  box-shadow:0 0 25px rgba(0,255,150,.35);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.game-card:hover{
+  transform:translateY(-8px) scale(1.05);
+  box-shadow:0 0 45px rgba(0,255,150,.7);
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+}
 
