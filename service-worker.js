@@ -1,4 +1,4 @@
-const CACHE = "noah-games-v1";
+const CACHE = "noah-games-v2";
 
 const FILES = [
   "./",
