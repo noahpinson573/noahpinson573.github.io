@@ -2,33 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>My Games Hub</title>
+<title>Noah’s Games Hub</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{
-  margin:0;
-  background:#050608;
-  color:#00ff95;
-  font-family:system-ui;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  height:100vh;
-}
-a{
-  color:#00ff95;
-  text-decoration:none;
-  border:1px solid #00ff95;
-  padding:14px 22px;
-  margin:10px;
-  border-radius:10px;
-}
-</style>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ff95">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🎮 My Games</h1>
-  <a href="games/snake.html">Snake</a>
-  <a href="games/tetris.html">Tetris</a>
+
+<h1 class="title">🎮 Noah’s Games</h1>
+<p class="subtitle">Tap a game to play!</p>
+
+<div class="menu">
+  <a class="game-card" href="games/snake.html">🐍 Snake</a>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
